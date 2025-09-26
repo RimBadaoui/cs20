@@ -1,0 +1,121 @@
+/* consistent across all pages */
+body {
+      background-color: rgb(36, 35, 35);
+      color: rgb(235, 232, 232);
+      font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    }
+    .name {
+      /* font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif; */
+      text-align: center;
+    }
+    .name#title {
+      font-size: 70px;
+      margin-bottom: 0;
+      margin-top: 10;
+    }
+
+    .name#subtitle {
+      font-size: 26px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    .marquee{
+      background:#2a2a2a;
+      color:white;
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:.85rem;
+      border-bottom:1px solid #2f2f2f;
+      white-space:nowrap;
+      overflow:hidden;
+    }
+    .marquee__inner{
+      display:inline-block;
+      padding:10px 0;
+      animation:scroll 30s linear infinite;
+    }
+    .marquee__inner span{
+      margin:0 18px;
+      opacity:.95;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+    }
+    @keyframes scroll{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+    
+    .navbar a {
+      font-size: 20px;
+      /* font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif; */
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      /* margin-right: 50px;
+      margin-left: 50px; */
+      padding: 10px;
+      margin-right: 50px;  
+
+
+    }
+
+    .navbar a:hover{
+      background-color: rgb(36, 35, 35);
+    }
+
+    .navbar {
+      display:flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      background-color: #2a2a2a;
+    }
+
+    footer {
+      padding:20px 100px 20px;
+      background-color: #2a2a2a;
+      text-align: center;
+    }
+
+    .footer-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+    }
+    .footer-text a {
+    text-decoration: none;
+    color: white;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-text p {
+    text-decoration: none;
+    color: white;
+    }
+
+/* collections */
+.collections3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.coll1 {
+    margin:70px;
+    text-align: center;
+}
+
+.discounts {
+    margin: 50px auto;
+    background-color: #8FA140;
+}
+
+.story {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.story p {
+    font-size: 20px;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* @font-face {
+      font-family: "bodoni-woff"; /* set name 
+      src: url("bodoni-woff/BodoniflfBold-MVZx.ttf"); /* url of the font 
+    } 
+    */
+    body {
+      background-color: rgb(36, 35, 35);
+      color: rgb(235, 232, 232);
+      font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+    }
+    .name {
+      /* font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif; */
+      text-align: center;
+    }
+    .name#title {
+      font-size: 70px;
+      margin-bottom: 0;
+      margin-top: 10;
+    }
+
+    .name#subtitle {
+      font-size: 26px;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    .marquee{
+      background:#2a2a2a;
+      color:white;
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:.85rem;
+      border-bottom:1px solid #2f2f2f;
+      white-space:nowrap;
+      overflow:hidden;
+    }
+    .marquee__inner{
+      display:inline-block;
+      padding:10px 0;
+      animation:scroll 30s linear infinite;
+    }
+    .marquee__inner span{
+      margin:0 18px;
+      opacity:.95;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+    }
+    @keyframes scroll{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+    
+    .navbar a {
+      font-size: 20px;
+      /* font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif; */
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      /* margin-right: 50px;
+      margin-left: 50px; */
+      padding: 10px;
+      margin-right: 50px;  
+
+
+    }
+
+    .navbar a:hover{
+      background-color: rgb(36, 35, 35);
+    }
+
+    .navbar {
+      display:flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      background-color: #2a2a2a;
+    }
+
+    .images{
+      display:flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .images img{
+      margin:70px;
+    }
+
+    .bitOfText h1{
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .bitOfText h2{
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .letter {
+      padding:50px 80px 50px;
+      margin: 80px;
+      display:flex;
+      justify-content: center;
+      background-color: black;
+    }
+    .letter h1{
+      font-size: 40px;
+    }
+
+    .letter h2{
+      font-size: 20px;
+      max-width: 100%;
+      margin-right: 60px;
+      line-height: 3rem;
+    }
+
+    .letter img{
+      max-width: 100%;
+      height: auto;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: flex-start;
+      background-color: black;
+      padding:90px 50px 90px;
+      margin: 80px;
+
+    }
+
+    .contact-box img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 200px;
+    }
+
+    .contact-text h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .contact-text h2 {
+      font-size: 30px;
+      line-height: 5rem;
+    }
+
+    form {
+      line-height: 2rem;
+      font-size: 25px;
+    }
+    input {
+      background: transparent;
+      border: 2px solid white;     
+      color: white;
+      padding: 10px;
+    }
+    button{
+      font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+      color:white;
+      font-size: 15px;
+      background: #8FA140;
+      border: 2px solid #8FA140;     
+      padding:10px;
+      margin-top:10px;
+    }
+
+    footer {
+      padding:20px 100px 20px;
+      background-color: #2a2a2a;
+      text-align: center;
+    }
+
+    .footer-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+    }
+
+    .footer-text a {
+    text-decoration: none;
+    color: white;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-text p {
+    text-decoration: none;
+    color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="marquee">
+    <div class="marquee__inner">
+      <span>•&nbsp; Shop Our Latest Collections &nbsp;•</span>
+      <span>Shop Our Latest Collections</span>
+      <span>•&nbsp; Shop Our Latest Collections &nbsp;•</span>
+      <span>Shop Our Latest Collections</span>
+      <span>•&nbsp; Shop Our Latest Collections &nbsp;•</span>
+      <span>Shop Our Latest Collections</span>
+      <span>•&nbsp; Shop Our Latest Collections &nbsp;•</span>
+      <span>Shop Our Latest Collections</span>
+      <span>•&nbsp; Shop Our Latest Collections &nbsp;•</span>
+      <span>Shop Our Latest Collections</span>
+    </div>
+  </div>
+
+  <h1 class="name" id="title"><b>Hoodiehub</b></h1>
+  <h2 class="name" id="subtitle">But first, comfort.</h2>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="collections.html">Collections</a>
+    <a href="deals.html">Deals</a>
+    <a href="story.html">Our Story</a>
+  </div>
+ 
+  <div class="images" id="first3">
+    <img src="images/grey looking back (3).jpg">
+    <img src="images/grey standing in mountains (1).jpg">
+    <img src="images/grey with orange leaves (2).jpg">
+  </div>
+
+  <div class="bitOfText">
+    <h1>Hoodies for every occasion.</h1>
+    <h2>Because to us, your comfort<br><i>always</i> comes first.</h2>
+  </div>
+
+   <div class="images" id="last3">
+    <img src="images/matt yellow from bottom.jpg">
+    <img src="images/matt-yellow-from-front.jpg">
+    <img src="images/matt yellow from back.jpg">
+  </div>
+
+  <div class="letter">
+    <div class="writing">
+      <h1><b>Every fabric chosen mindfully,<br>every piece crafted with care.</b></h1>
+      <h2>Our commitment to caring for the environment shines through our real 
+        fabrics, derived purely from natural sources. We steer clear of all 
+        harmful chemicals in pursuit of creating articles that are healthy for 
+        your body. We hope to bring you clean, authentic garments that will keep 
+        you comfortable and feeling your best in every moment.</h2>
+    </div>
+    <img src="images/pile.jpg" alt="mount">
+  </div>
+
+  <div class="contact-box">
+    <img src="images/ben-kim-lEMdgOdXStU-unsplash (3).jpg">
+    <div class="contact-text">
+      <h1>Contact Us</h2>
+      <h2><b>Email:</b> hoodiehub@email.com<br><b>Phone:</b> (123)-456-7890</h2>
+      <form action="#">
+        <label for="feedback">We want to hear your feedback:<br></label>
+        <input type="text" id="feedback"><br>
+        <button type="submit">Submit</button>
+      </form>
+      
+    </div> 
+  </div>
+
+  <footer>
+    <div class="footer-text">
+      <a href="collections.html">Collections</a>
+      <a href="deals.html">Deals</a>
+      <a href="story.html">Our Story</a>
+    </div>
+    <p>&copy; Hoodiehub 2025</p>
+  </footer>
+  
+</body>
+</html>
