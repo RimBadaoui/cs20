@@ -8,7 +8,7 @@
     html, body {
       overflow-x: hidden;   
     }
-    
+
     body {
       background-color: rgb(36, 35, 35);
       color: rgb(235, 232, 232);
@@ -91,6 +91,14 @@
       margin:70px;
     }
 
+    @media (max-width: 1029px) {
+      .images {
+        flex-direction: column;   
+        align-items: center;      
+        gap: 10px;              
+      }
+    }
+
     .bitOfText h1{
       text-align: center;
       font-size: 40px;
@@ -124,6 +132,15 @@
       height: auto;
     }
 
+    @media (max-width: 1029px) {
+      .letter {
+        flex-direction: column;   
+        align-items: center;      
+        gap: 10px;              
+      }
+    }
+
+
     .contact-box {
       display: flex;
       justify-content: flex-start;
@@ -137,6 +154,14 @@
       max-width: 100%;
       height: auto;
       margin-right: 200px;
+    }
+
+    @media (max-width: 1029px) {
+      .contact-box {
+        flex-direction: column;   
+        align-items: center;      
+        gap: 10px;              
+      }
     }
 
     .contact-text h1 {
