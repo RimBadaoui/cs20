@@ -1,4 +1,7 @@
 /* consistent across all pages */
+html, body {
+  overflow-x: hidden;   
+}
 body {
       background-color: rgb(36, 35, 35);
       color: rgb(235, 232, 232);
@@ -98,6 +101,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .coll1 {
