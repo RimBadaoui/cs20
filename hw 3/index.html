@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joe's Hotdog Stand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+  </script>
+  <h1>Joe's Hotdog Stand</h1>
+  <h2>Your Order</h2>
+  
+  <table border="1">
+    <script>
+
+        const PRICE_DOG   = 3.75;
+        const PRICE_FRIES = 2.50;
+        const PRICE_SODA  = 1.75;
+        const TAX_RATE = 0.0625;
+
+
+        let numDogs = prompt("How many hotdogs would you like?");
+        let numFries = prompt("How many fries would you like?");
+        let numDrinks = prompt("How many drinks would you like?");
+
+        // formats decimal as money and returns a string
+        function showMoney(x) {
+            const cents = Math.round(x * 100);
+            const dollars = Math.floor(cents / 100);
+            const rem = cents % 100; 
+            const centsStr = rem < 10 ? "0" + rem : String(rem);
+            return dollars + "." + centsStr;
+        }
+
+        // calculate costs
+        const dogsTotal  = showMoney(numDogs  * PRICE_DOG);
+        const friesTotal = showMoney(numFries * PRICE_FRIES);
+        const drinkTotal  = showMoney(numDrinks  * PRICE_SODA);
+
+        const subtotalBefore = showMoney(parseFloat(dogsTotal) + parseFloat(friesTotal) + parseFloat(drinkTotal));
+
+        const discount = (subtotalBefore >= 30) ? showMoney(subtotalBefore * 0.10) : showMoney(0);
+
+        const subtotalAfter = showMoney(parseFloat(subtotalBefore - discount));
+
+        const tax = showMoney(subtotalAfter * TAX_RATE);
+
+        const finalTotal = showMoney(parseFloat(subtotalAfter) + parseFloat(tax));
+
+        // write to the page
+        document.write("<tr><td>Hotdogs</td> <td> " + numDogs + " </td> <td>" + dogsTotal + "</td> </tr>" );
+        document.write("<tr><td>French Fries</td> <td> " + numFries + " </td> <td>" + friesTotal + "</td> </tr>" );
+        document.write("<tr><td>Drinks</td> <td> " + numDrinks + " </td> <td>" + drinkTotal + "</td> </tr>" );
+        
+        document.write("<tr><td>Subtotal before discount</td> <td></td> <td>" + subtotalBefore + "</td> </tr>" );
+        document.write("<tr><td>Discount</td> <td></td> <td>" + discount + "</td> </tr>" );
+        document.write("<tr><td>Subtotal after discount</td> <td></td> <td>" + subtotalAfter + "</td> </tr>" );
+        document.write("<tr><td>Tax</td> <td></td> <td>" + tax + "</td> </tr>" );
+        document.write("<tr><td>Total</td> <td></td> <td>" + finalTotal + "</td> </tr>" );
+    </script>
+  </table>
+    
+</body>
+</html>
